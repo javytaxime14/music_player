@@ -52,7 +52,6 @@ const main_box= document.querySelector('.main');
 const logo = document.getElementById('logo');
 const show_song = document.querySelector('.show_song_no');
 const range = document.querySelector('input');
-const icon_animated = document.getElementsByTagName('i');
 const volume_icon = document.getElementById('volume_icon');
 
 
@@ -65,7 +64,6 @@ toggle.addEventListener('click', function(){
     if(this.classList.toggle('bi-brightness-high-fill')){
         body.style.background = 'white';
         main_box.style.background = 'white';
-        auto_play.style.background = '#FF8A65';
         play.style.background = '#993300';
         range.style.background = 'darkgray';
         slider.style.background = 'darkgray';
@@ -78,19 +76,20 @@ toggle.addEventListener('click', function(){
         logo.style.color = 'black';
         show_song.style.color = '#ee9729';
         volume_show.style.color = 'darkslategray';
-        auto_play.style.color = 'black';
         body.style.transition = '2s';
         main_box.style.transition = '2s';
     }else{
         body.style.background = 'black';
         main_box.style.background = 'black';
-        play.style.background = 'gray';
-        auto_play.style.background = 'gray'
+        play.style.background = 'darkgray';
+        previous.style.background = '#333333';
+        next.style.background = '#333333';
         volume_icon.style.background = 'black';
         title.style.color = 'white';
         artist.style.color = 'white';
+        show_song.style.color = '#FFF';
         body.style.color = 'white';
-        auto_play.style.color = 'black';
+        volume_show.style.color = 'white';
         body.style.transition = '2s';
 
     }
@@ -216,12 +215,15 @@ function change_duration() {
 //autoplay function
 
 function autoplay_switch() {
-    if (autoplay==1) {
+    if (autoplay==1)  {
         autoplay = 0;
-        auto_play.style.background = "rgba(255, 255, 255, 0.2)";
+        auto_play.style.background = "#b3b3b3";
+        auto_play.style.color = "#fff"
+
     } else {
         autoplay = 1;
         auto_play.style.background = "#FF8A65";
+        auto_play.style.color = "#000"
     }
 }
 
