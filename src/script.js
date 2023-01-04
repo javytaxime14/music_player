@@ -223,7 +223,7 @@ function autoplay_switch() {
 
     } else {
         autoplay = 1;
-        auto_play.style.background = "#FF8A65";
+        auto_play.style.background = "#ff6333";
         auto_play.style.color = "#000"
     }
 }
