@@ -26,7 +26,7 @@ let playing_song = false;
 
 let track = document.createElement('audio');
 
-track.loop = false;
+track.loop = true;
 //all songs list
 
 let All_song = [ 
@@ -65,6 +65,7 @@ toggle.addEventListener('click', function(){
         body.style.background = 'white';
         main_box.style.background = 'white';
         play.style.background = '#993300';
+        auto_play.style.background = 'lightgray';
         range.style.background = 'darkgray';
         slider.style.background = 'darkgray';
         volume_icon.style.background = '#FF8A65';
@@ -83,8 +84,8 @@ toggle.addEventListener('click', function(){
         main_box.style.background = 'black';
         play.style.background = 'darkgray';
         previous.style.background = '#333333';
+        auto_play.style.background = 'rgba(245, 245, 245, 0.2)';
         next.style.background = '#333333';
-        auto_play.style.background = 'lightgray';
         volume_icon.style.background = 'black';
         title.style.color = 'white';
         artist.style.color = 'white';
