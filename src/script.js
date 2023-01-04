@@ -84,11 +84,12 @@ toggle.addEventListener('click', function(){
         play.style.background = 'darkgray';
         previous.style.background = '#333333';
         next.style.background = '#333333';
+        auto_play.style.background = 'lightgray';
         volume_icon.style.background = 'black';
         title.style.color = 'white';
         artist.style.color = 'white';
-        show_song.style.color = '#FFF';
         body.style.color = 'white';
+        auto_play.style.color = 'black';
         volume_show.style.color = 'white';
         body.style.transition = '2s';
 
