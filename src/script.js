@@ -54,11 +54,6 @@ const show_song = document.querySelector('.show_song_no');
 const range = document.querySelector('input');
 const volume_icon = document.getElementById('volume_icon');
 
-
-
-
-
-
 toggle.addEventListener('click', function(){
     this.classList.toggle('bi-moon');
     if(this.classList.toggle('bi-brightness-high-fill')){
@@ -96,6 +91,7 @@ toggle.addEventListener('click', function(){
 
     }
 });
+
 
 //function load track
 function load_track(index_no) {
@@ -219,13 +215,14 @@ function change_duration() {
 function autoplay_switch() {
     if (autoplay==1)  {
         autoplay = 0;
-        auto_play.style.background = "#b3b3b3";
-        auto_play.style.color = "#fff"
+        auto_play.style.background = "rgba(174, 116, 0, 0.51)";
+        auto_play.style.color = "rgb(20, 20, 20)"
 
     } else {
         autoplay = 1;
         auto_play.style.background = "#ff6333";
-        auto_play.style.color = "#000"
+        auto_play.style.color = "#fff"
+        i.style.color = "rgb(255, 255, 255)"
     }
 }
 
